@@ -3,17 +3,16 @@ import Button from "../ui/Button";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDark , setIsDark] = useState(false)
+  const [isDark, setIsDark] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-
   const toggleTheme = () => {
     document.getElementsByTagName("html")[0].classList.toggle("dark");
-    setIsDark(!isDark)
-    console.log(isDark)
+    setIsDark(!isDark);
+    console.log(isDark);
   };
 
   return (
@@ -27,11 +26,21 @@ function Navbar() {
         </figure>
 
         <ul className="hidden md:flex md:gap-5 md:text-md dark:text-dark-paragraphText text-light-paragraphText">
-          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">Products</li>
-          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">Pages</li>
-          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">Integrations</li>
-          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">Blog</li>
-          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">Pricing</li>
+          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">
+            Products
+          </li>
+          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">
+            Pages
+          </li>
+          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">
+            Integrations
+          </li>
+          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">
+            Blog
+          </li>
+          <li className="cursor-pointer dark:hover:text-white hover:text-red-400 dark:hover:text-dark-buttonHover">
+            Pricing
+          </li>
         </ul>
 
         <button
@@ -80,11 +89,43 @@ function Navbar() {
           </button>
 
           <ul className="flex flex-col gap-5 p-4">
-            <li className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover" onClick={() => setIsMenuOpen(false)}>Products</li>
-            <li className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover" onClick={() => setIsMenuOpen(false)}>Pages</li>
-            <li className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover" onClick={() => setIsMenuOpen(false)}>Integrations</li>
-            <li className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover" onClick={() => setIsMenuOpen(false)}>Blog</li>
-            <li className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover" onClick={() => setIsMenuOpen(false)}>Pricing</li>
+            <li
+              className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Products
+            </li>
+            <li
+              className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Pages
+            </li>
+            <li
+              className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Integrations
+            </li>
+            <li
+              className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
+            </li>
+            <li
+              className="cursor-pointer hover:text-white dark:hover:text-dark-buttonHover"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Pricing
+            </li>
+
+            {/* Add the Button component here for mobile menu */}
+            <Button
+              functionSend={toggleTheme}
+              text={isDark ? "Light 🌞" : "Dark 🌙"}
+              className="rounded-3xl bg-light-buttonBg hover:dark:bg-gray-800 dark:bg-dark-buttonBg text-black dark:text-white p-3 w-28 text-sm font-medium shadow-inner-top-light dark:shadow-inner-top-dark hover:bg-light-buttonHover dark:hover:bg-dark-buttonHover"
+            />
           </ul>
         </div>
 

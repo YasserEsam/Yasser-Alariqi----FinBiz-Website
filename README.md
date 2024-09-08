@@ -1,8 +1,17 @@
-# React + Vite
+## Finbiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Made with ❤️ by [Yasser](https://github.com/YasserEsam)
 
-Currently, two official plugins are available:
+## Live demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Live at: [https://finbiz-design.netlify.app](https://finbiz-design.netlify.app)
+
+## How to install
+
+installation: `npm i`
+
+## How to use
+
+1. Open the terminal
+2. Run `npm run dev`
+3. Open http://localhost:3000
