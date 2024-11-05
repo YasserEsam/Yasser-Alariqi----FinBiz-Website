@@ -16,8 +16,8 @@ function Navbar() {
   };
 
   return (
-    <header className="bg-light-navbarBg dark:bg-dark-navbarBg">
-      <nav className="relative container mx-auto flex lg:justify-around justify-between items-center p-4 z-[9999]">
+    <header className="bg-light-navbarBg  dark:bg-dark-navbarBg">
+      <nav className="relative container  mx-auto flex lg:justify-around justify-between items-center p-4 z-[9999]">
         <figure className="flex items-center gap-2 cursor-pointer">
           <img src="/logo.svg" alt="logo" />
           <h3 className="dark:text-dark-headingText text-light-headingText font-medium text-lg">
@@ -131,7 +131,7 @@ function Navbar() {
 
         <Button
           functionSend={toggleTheme}
-          text={isDark ? "Light 🌞" : "Dark 🌙"}
+          text={isDark ?  "Dark 🌙" : "Light 🌞"}
           className="hidden md:block rounded-3xl bg-light-buttonBg hover:dark:bg-gray-800 dark:bg-dark-buttonBg text-black dark:text-white p-3 w-28 text-sm font-medium shadow-inner-top-light dark:shadow-inner-top-dark hover:bg-light-buttonHover dark:hover:bg-dark-buttonHover"
         />
       </nav>

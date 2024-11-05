@@ -14,7 +14,7 @@ function ProfitGrid() {
             <p className="text-sm text-dark-lightGreen font-semibold">+18.23</p>
           </header>
           <div className="flex justify-between mt-7 items-end flex-wrap">
-            <h4 className="lg:text-5xl text-4xl ">$350.240</h4>
+            <h4 className="lg:text-4xl text-3xl ">$350.240</h4>
             <img src="/graphG.svg"/>
           </div>
         </div>
@@ -26,7 +26,7 @@ function ProfitGrid() {
               <p className="text-sm text-red-600 font-semibold">+28.35</p>
             </header>
             <div className="flex justify-between mt-7 items-end flex-wrap">
-              <h4 className="lg:text-5xl text-4xl ">$400.690</h4>
+              <h4 className="lg:text-4xl text-3xl ">$400.690</h4>
               <img src="/graphR.svg"/>
             </div>
         </div>
@@ -38,7 +38,7 @@ function ProfitGrid() {
             <p className="text-sm text-blue-600 font-semibold">+28.35</p>
           </header>
           <div className="flex justify-between mt-7 items-end flex-wrap">
-            <h4 className="lg:text-5xl text-4xl">$200.000</h4>
+            <h4 className="lg:text-4xl text-3xl">$200.000</h4>
             <img src="/graphB.svg"/>
           </div>
         </div>
